@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.product{
+    display: flex;
+    /* gap: 30px; */
+    /* flex-wrap: wrap; */
+    margin: auto;
+    width: 300px;
+    height: 470px;
+    background-color: #f4efef;
+    position: relative;
+    border: 1px solid #e3e3e3;
+}
+.name{
+    font-size: 21px;
+}
+
+.description{
+    color: grey;
+    font-size: 15px;
+}
+.product img{
+    width: 300px;
+    height: 300px;
+}
+
+.addTocard{
+  display: flex;
+  justify-content: space-around;
+}
+.addTocard input{
+  width: 40px;
+}
+.product .price{
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 5%
+}
+
+.name{
+    width: 300px;
+    display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 15px;
+}
+.description{
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+.btn{
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+ .btn:hover{
+    background-color: rgb(208, 69, 69);
+ }
+.number{
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+}
+
+@media (max-width: 600px) {
+    .product {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+    }
+  
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .name,
+    .description {
+      width: 100%;
+    }
+  
+    .btn,
+    .number {
+      position: static;
+      margin-top: 10px;
+    }
+  }
+  
